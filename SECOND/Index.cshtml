@@ -1,0 +1,19 @@
+﻿<form method="post" action="/SECOND/Index">
+    <label>enter number1:</label>
+    <input type="number" name="num1" />
+    <br />
+    <label>enter number2:</label>
+    <input type="number" name="num2" />
+    <br />
+    <button type="submit">submit</button>
+</form>
+
+@if (ViewBag.Num1 != null)
+{
+    <p>Number 1: @ViewBag.Num1</p>
+    <p>Number 2: @ViewBag.Num2</p>
+    <p>ADD: @ViewBag.Add</p>
+    <p>SUB: @ViewBag.Sub</p>
+    <p>MUL: @ViewBag.Mul</p>
+    <p>DIV: @ViewBag.Div</p>
+}
